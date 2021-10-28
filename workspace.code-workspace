@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../next-page-transitions-framer-motion"
+		},
+		{
+			"path": "../gabriel"
+		},
+		{
+			"path": "../platzi-tailwind-css"
+		},
+		{
+			"path": "../base-de-datos-frontend"
+		}
+	],
+	"settings": {}
+}

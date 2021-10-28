@@ -119,3 +119,11 @@
     flex-direction: column;
   }
 }
+
+.sandbox {
+  background-color: black;
+  width: 100%;
+  height: 44vw;
+  padding: 20px;
+  margin: 0px;
+}
