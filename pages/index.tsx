@@ -1,18 +1,26 @@
 import type { NextPage } from 'next'
-import { NextRouter, useRouter } from 'next/dist/client/router'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from 'styles/Home.module.css'
+import Transition from 'components/animation/Transition'
+import MainCard from 'components/core/MainCard'
 
 const Home: NextPage = () => {
-  const router: NextRouter = useRouter()
-
   return (
-    <button
-      onClick={() => router.push('/sandbox')}
-    >
-      Sandbox
-    </button>
+    <Transition>
+      <div>
+        <MainCard />
+        <MainCard />
+        <MainCard />
+      </div>
+      {/* <div className="mt-2 md:flex md:mx-64 md:justify-around">
+        <div className="bg-gray-200 p-8 rounded mb-2 flex items-center">
+          <div className="text-2xl">
+            Tutoriales
+          </div>
+        </div>
+        <div className="">
+          <Carousel />
+        </div>
+      </div> */}
+    </Transition>
   )
 }
 
