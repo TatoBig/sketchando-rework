@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-navbar {
-  @apply font-bold md:px-16 px-2 rounded text-gray-700 hover:bg-primary hover:text-white transition-colors
+  @apply font-bold md:px-16 px-2 rounded text-gray-700 hover:bg-primary hover:text-white transition-colors flex justify-center items-center w-full
 }
 
 ul {
@@ -27,5 +27,14 @@ li {
   height: 20px;
   flex: 1;
 }
+
+circle,
+rect,
+line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+
 /* A */ 
 

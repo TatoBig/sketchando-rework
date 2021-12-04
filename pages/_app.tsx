@@ -8,11 +8,9 @@ function MyApp({ Component, pageProps, router }: AppLayoutProps) {
   const url = `https://localhost:3000${router.route}`
 
   return (
-    <div className="m-2">
-      <Layout>
-        <Component {...pageProps} canonical={url} key={url} />
-      </Layout>
-    </div>
+    <Layout>
+      <Component {...pageProps} canonical={url} key={url} />
+    </Layout>
   )
 }
 export default MyApp
