@@ -1,27 +1,27 @@
 import { useState } from 'react'
-import { motion, useMotionValue, useTransform } from "framer-motion"
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 
 const Checkbox = () => {
   const [isChecked, setIsChecked] = useState(true)
   const pathLength = useMotionValue(0)
   const opacity = useTransform(pathLength, [0.05, 0.15], [0, 1])
-
+  
   return (
     <motion.div
       style={{
         width: 150,
         height: 150,
         borderRadius: 30,
-        backgroundColor: "#fff",
-        cursor: "pointer",
+        backgroundColor: '#fff',
+        cursor: 'pointer'
       }}
       animate={{
         scale: isChecked ? 1 : 0.5,
         backgroundColor: isChecked
-          ? "rgba(255, 255, 255, 1)"
-          : "rgba(255, 255, 255 ,0.5)",
+          ? 'rgba(255, 255, 255, 1)'
+          : 'rgba(255, 255, 255 ,0.5)'
       }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       onTap={() => setIsChecked(!isChecked)}
     >
       <svg

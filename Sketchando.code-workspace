@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "../base-de-datos-frontend"
+		},
+		{
+			"path": "../Framernote"
 		}
 	],
 	"settings": {}
