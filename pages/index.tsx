@@ -1,10 +1,9 @@
-import type { NextPage } from 'next'
-import Transition from 'components/animation/Transition'
-import MainCard from 'components/core/MainCard'
-import Link from 'next/link'
 import { Carousel } from 'components/core/Carousel'
+import Link from 'next/link'
+import MainCard from 'components/core/MainCard'
+import Transition from 'components/animation/Transition'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Transition>
       <div className="md:flex md:justify-center md:mt-14">

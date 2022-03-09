@@ -6,9 +6,8 @@ import type {
 import type { AppProps } from 'next/app'
 
 declare module 'next' {
-  type NextLayoutComponentType<P = {}> = NextComponentType<
+  type NextLayoutComponentType<P = unknown> = NextComponentType<
     NextPageContext,
-    any,
     P
   > & {
     layout?: NextFunctionComponent
@@ -16,7 +15,7 @@ declare module 'next' {
 }
 
 declare module 'next/app' {
-  type AppLayoutProps<P = {}> = AppProps & {
+  type AppLayoutProps<P = unknown> = AppProps & {
     Component: NextLayoutComponentType
   }
 }
